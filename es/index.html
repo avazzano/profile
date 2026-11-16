@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1322">
+  <meta name="author" content="Andrés Vazzano">
+  <meta name="description" content="Andrés Vazzano. Liderazgo técnico hands-on, arquitectura de software, infraestructura cloud y transformación digital.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Andrés Vazzano | Engineering Manager y Arquitecto de Software">
+  <meta property="og:description" content="Andrés Vazzano. Liderazgo técnico hands-on, arquitectura de software, infraestructura cloud y transformación digital.">
+  <meta property="og:url" content="https://avazzano.github.io/profile/es/">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="https://avazzano.github.io/profile/es/">
+  <link rel="alternate" hreflang="en" href="https://avazzano.github.io/profile/">
+  <link rel="alternate" hreflang="es" href="https://avazzano.github.io/profile/es/">
+  <link rel="alternate" hreflang="it" href="https://avazzano.github.io/profile/it/">
+  <link rel="alternate" hreflang="x-default" href="https://avazzano.github.io/profile/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230e2033'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' fill='%2367e8c6' font-family='Arial,sans-serif' font-weight='700' font-size='27'%3EAV%3C/text%3E%3C/svg%3E">
+  <title>Andrés Vazzano | Engineering Manager y Arquitecto de Software</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b1322;--bg-alt:#101c2d;--surface:#142235;--surface-2:#19293d;
+      --ink:#f3f7f8;--muted:#adbac6;--faint:#8195a6;--line:rgba(190,216,228,.15);
+      --accent:#73e4c5;--accent-bright:#a3ffe4;--accent-dark:#0b6659;
+      --max:1160px;--radius:22px
+    }
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:94px}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",Arial,sans-serif;font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased}
+    body::before{content:"";position:absolute;top:0;right:0;z-index:-1;width:75vw;height:730px;background:radial-gradient(ellipse at 65% 10%,rgba(53,144,135,.17),transparent 63%);pointer-events:none}
+    a{color:inherit;text-decoration:none}
+    a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:4px;border-radius:5px}
+    button{font:inherit}
+    ::selection{background:var(--accent);color:var(--bg)}
+    .container{width:min(var(--max),calc(100% - 48px));margin:auto}
+    .skip-link{position:absolute;left:16px;top:-70px;background:var(--accent);color:var(--bg);padding:10px 18px;z-index:100}
+    .skip-link:focus{top:12px}
+    .site-header{position:sticky;top:0;z-index:40;background:rgba(11,19,34,.86);border-bottom:1px solid var(--line);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+    .header-inner{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+    .brand{display:flex;align-items:center;gap:13px;font-family:"Space Grotesk",sans-serif;font-size:17px;font-weight:700;letter-spacing:-.03em;white-space:nowrap}
+    .brand-mark{width:39px;height:39px;border-radius:12px;display:grid;place-items:center;background:var(--accent);color:var(--bg);font-size:14px;letter-spacing:-.06em}
+    .nav{display:flex;align-items:center;gap:33px}
+    .nav a{font-size:13px;font-weight:700;letter-spacing:.035em;color:#c4d0da;transition:color .2s}
+    .nav a:hover,.nav a:focus-visible{color:var(--accent)}
+    .nav .nav-contact{padding:9px 17px;border:1px solid rgba(115,228,197,.6);border-radius:999px;color:var(--accent)}
+    .menu-button{display:none;background:transparent;border:1px solid var(--line);color:var(--ink);border-radius:11px;padding:8px 13px;cursor:pointer;font-weight:700}
+    .eyebrow{display:inline-flex;align-items:center;gap:11px;color:var(--accent);font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+    .eyebrow::before{content:"";width:23px;height:1px;background:var(--accent)}
+    .hero{position:relative;padding:132px 0 110px;overflow:hidden}
+    .hero-grid{display:block;max-width:1040px;margin-left:auto;margin-right:auto}
+    .hero h1{font-family:"Space Grotesk",sans-serif;font-size:clamp(45px,5.8vw,76px);line-height:1.14;letter-spacing:-.058em;font-weight:600;margin:30px 0 28px;max-width:1050px}
+    .hero h1 em{font-style:normal;color:var(--accent)}
+    .hero-lead strong{color:var(--ink);font-weight:700}
+    .hero-lead{font-size:clamp(17px,1.6vw,20px);color:#cad5df;line-height:1.8;max-width:800px;margin:0 0 32px}
+    .hero-meta{display:flex;align-items:center;gap:9px;color:var(--muted);font-size:13px;margin:0 0 35px}
+    .hero-meta .dot{background:var(--accent);border-radius:50%;height:7px;width:7px;box-shadow:0 0 0 5px rgba(115,228,197,.12)}
+    .actions{display:flex;flex-wrap:wrap;gap:13px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:11px;min-height:48px;padding:12px 22px;border-radius:9px;font-size:13px;font-weight:700;transition:transform .2s,background .2s,border-color .2s}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:var(--accent);color:#081b20}
+    .btn-primary:hover{background:var(--accent-bright)}
+    .btn-outline{border:1px solid rgba(210,230,241,.3);color:var(--ink)}
+    .btn-outline:hover{border-color:var(--accent)}
+    .stat-strip{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .stat{padding:30px 24px;display:flex;gap:16px;align-items:center}
+    .stat:first-child{padding-left:0}
+    .stat:not(:last-child){border-right:1px solid var(--line)}
+    .stat b{font:600 28px/1 "Space Grotesk",sans-serif;letter-spacing:-.055em;color:var(--accent);white-space:nowrap}
+    .stat span{color:var(--muted);font-size:12px;line-height:1.5}
+    .section{padding:116px 0}
+    .section-alt{background:var(--bg-alt)}
+    .section-head{max-width:760px;margin-bottom:51px}
+    .section-head h2{font:600 clamp(34px,4vw,54px)/1.17 "Space Grotesk",sans-serif;letter-spacing:-.055em;margin:16px 0 18px}
+    .section-head p{font-size:17px;color:var(--muted);margin:0;line-height:1.8}
+    .about-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:80px;align-items:start}
+    .about-copy p{font-size:17px;line-height:1.9;color:#c3d0db;margin:0 0 20px}
+    .about-copy p strong{color:var(--ink)}
+    .principles{display:grid;gap:11px}
+    .principle{border:1px solid var(--line);border-radius:13px;padding:22px 23px;display:flex;align-items:start;gap:20px;background:rgba(255,255,255,.015)}
+    .principle-number{font:600 14px "Space Grotesk",sans-serif;color:var(--accent);margin-top:3px}
+    .principle h3{margin:0 0 5px;font:600 17px "Space Grotesk",sans-serif}
+    .principle p{color:var(--muted);font-size:13px;line-height:1.7;margin:0}
+    .expertise-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
+    .expertise-card{padding:35px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);transition:transform .2s,border-color .2s}
+    .expertise-card:hover{transform:translateY(-4px);border-color:rgba(115,228,197,.38)}
+    .card-symbol{width:45px;height:45px;display:grid;place-items:center;border-radius:12px;background:rgba(115,228,197,.09);color:var(--accent);font:700 20px "Space Grotesk",sans-serif;margin-bottom:25px}
+    .expertise-card h3{font:600 23px "Space Grotesk",sans-serif;letter-spacing:-.035em;margin:0 0 12px}
+    .expertise-card p{font-size:14px;color:var(--muted);line-height:1.85;margin:0 0 22px}
+    .tags{display:flex;flex-wrap:wrap;gap:8px}
+    .tag{display:inline-block;padding:6px 10px;border:1px solid rgba(201,218,228,.17);border-radius:7px;color:#cbd9e1;font-size:11px;font-weight:600;line-height:1.4}
+    .timeline{border-left:1px solid rgba(115,228,197,.27);margin-left:8px}
+    .job{position:relative;margin-left:36px;padding:0 0 50px}
+    .job::before{content:"";position:absolute;width:12px;height:12px;border-radius:50%;left:-43px;top:8px;background:var(--bg-alt);border:2px solid var(--accent);box-shadow:0 0 0 5px var(--bg-alt)}
+    .job:last-child{padding-bottom:0}
+    .job-card{border:1px solid var(--line);border-radius:18px;background:var(--surface);padding:33px 37px}
+    .job-head{display:flex;justify-content:space-between;align-items:start;gap:22px;padding-bottom:19px;border-bottom:1px solid var(--line);margin-bottom:20px}
+    .job-company{color:var(--accent);font-size:12px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;margin:0 0 7px}
+    .job h3{font:600 clamp(21px,2.3vw,27px)/1.3 "Space Grotesk",sans-serif;letter-spacing:-.04em;margin:0}
+    .job-date{font-size:12px;font-weight:700;white-space:nowrap;color:#c6d4de;border:1px solid var(--line);border-radius:99px;padding:5px 11px;margin-top:3px}
+    .job-summary{color:#c6d2db;margin:0 0 17px;font-size:14px;line-height:1.85}
+    .job ul{margin:0 0 23px;padding:0 0 0 19px}
+    .job li{padding-left:5px;margin-bottom:9px;color:var(--muted);font-size:14px;line-height:1.8}
+    .job li::marker{color:var(--accent)}
+    .roles{display:grid;gap:8px;margin-bottom:19px;color:#dce7ec;font-size:13px}
+    .roles div{display:flex;flex-wrap:wrap;gap:7px;justify-content:space-between}
+    .roles strong{font-weight:700}
+    .roles span{color:var(--faint)}
+    .early{margin:36px 0 0 44px;border:1px solid var(--line);border-radius:15px;background:var(--surface);padding:0 26px}
+    .early summary{cursor:pointer;padding:22px 0;color:var(--accent);font-weight:700;font-size:14px}
+    .early summary::marker{color:var(--accent)}
+    .early-content{border-top:1px solid var(--line);padding:12px 0 25px;display:grid;grid-template-columns:1fr 1fr;gap:18px 34px}
+    .early-item h4{font:600 16px "Space Grotesk",sans-serif;margin:14px 0 5px}
+    .early-item span{color:var(--accent);font-size:12px;display:block}
+    .early-item p{color:var(--muted);font-size:13px;margin:8px 0 0}
+    .learning-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+    .learning-card{background:var(--surface);border:1px solid var(--line);padding:35px;border-radius:var(--radius)}
+    .learning-card h3{font:600 24px "Space Grotesk",sans-serif;margin:0 0 23px;letter-spacing:-.03em}
+    .learning-item{padding:18px 0;border-top:1px solid var(--line)}
+    .learning-item strong{display:block;font-size:14px;line-height:1.55}
+    .learning-item span{display:block;color:var(--muted);font-size:12px;margin-top:5px}
+    .learning-intro{color:var(--muted);font-size:14px;margin:-10px 0 18px;line-height:1.8}
+    .contact-section{position:relative;overflow:hidden}
+    .contact-section::after{position:absolute;content:"";pointer-events:none;width:800px;height:800px;border-radius:100%;right:-500px;top:-380px;background:radial-gradient(circle,rgba(80,180,147,.1),transparent 65%)}
+    .contact-grid{display:flex;align-items:end;justify-content:space-between;gap:40px}
+    .contact-grid h2{font:600 clamp(40px,5vw,66px)/1.13 "Space Grotesk",sans-serif;letter-spacing:-.065em;margin:18px 0}
+    .contact-grid p{color:var(--muted);font-size:16px;max-width:610px;margin:0}
+    .contact-links{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}
+    .footer{border-top:1px solid var(--line);padding:25px 0;color:var(--faint);font-size:12px}
+    .footer-inner{display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap}
+    .footer a:hover{color:var(--accent)}
+    @media (max-width:950px){
+      .hero{padding:90px 0 78px}
+      .hero-grid{display:block}
+      .about-grid{gap:35px}
+      .nav{gap:17px}
+      .nav a{font-size:12px}
+    }
+    @media (max-width:680px){
+      html{scroll-padding-top:70px}
+      .container{width:min(var(--max),calc(100% - 36px))}
+      .header-inner{min-height:70px}
+      .brand{font-size:15px}
+      .menu-button{display:inline-flex}
+      .nav{display:none;position:absolute;left:0;right:0;top:69px;padding:18px 24px 24px;background:var(--bg);border-bottom:1px solid var(--line);box-shadow:0 20px 28px rgba(0,0,0,.22);flex-direction:column;align-items:stretch;gap:15px}
+      .nav.open{display:flex}
+      .nav a{font-size:14px;padding:3px 0}
+      .nav .nav-contact{text-align:center;padding:9px}
+      .hero{padding:77px 0 65px}
+      .hero h1{font-size:clamp(39px,10vw,61px)}
+      .hero-lead{font-size:16px}
+      .stat-strip{grid-template-columns:1fr}
+      .stat{padding:19px 0!important}
+      .stat:not(:last-child){border-right:0;border-bottom:1px solid var(--line)}
+      .stat b{min-width:93px}
+      .section{padding:80px 0}
+      .section-head{margin-bottom:34px}
+      .about-grid,.expertise-grid,.learning-grid,.early-content{grid-template-columns:1fr}
+      .expertise-card,.learning-card{padding:26px}
+      .job{margin-left:22px;padding-bottom:25px}
+      .job::before{left:-29px}
+      .job-card{padding:23px}
+      .job-head{flex-direction:column;gap:10px}
+      .job-date{margin-top:0}
+      .roles div{display:block}
+      .roles span{display:block;margin-top:2px}
+      .early{margin-left:29px;padding:0 19px}
+      .contact-grid{align-items:start;flex-direction:column}
+      .contact-links{justify-content:start}
+    }
+    @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+  
+    .lang-switch{display:flex;align-items:center;gap:4px;padding:4px;border:1px solid var(--line);border-radius:999px;flex-shrink:0}
+    .lang-switch a{display:inline-flex;justify-content:center;align-items:center;min-width:34px;padding:4px 7px;border-radius:999px;font-size:11px;line-height:1.5;font-weight:700;letter-spacing:.05em;color:var(--muted);transition:background .2s,color .2s}
+    .lang-switch a:hover{color:var(--accent)}
+    .lang-switch a[aria-current="page"]{background:var(--accent);color:var(--bg)}
+    @media(max-width:680px){.lang-switch{justify-content:center;align-self:flex-start;margin-top:4px}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Andrés Vazzano",
+    "jobTitle":"Senior Integration Lead",
+    "description":"Hands-on engineering leader and software architect specializing in cloud infrastructure, software development and technical leadership.",
+    "url":"https://avazzano.github.io/profile/",
+    "sameAs":["https://www.linkedin.com/in/andres-vazzano/","https://github.com/avazzano"],
+    "alumniOf":{"@type":"CollegeOrUniversity","name":"Universidad Nacional de La Plata"},
+    "homeLocation":{"@type":"Place","name":"La Plata, Buenos Aires, Argentina"}
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Ir al contenido</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Andrés Vazzano, inicio"><span class="brand-mark">AV</span><span>Andrés Vazzano</span></a>
+      <button class="menu-button" id="menu-button" type="button" aria-controls="site-nav" aria-expanded="false">Menú ☰</button>
+      <nav class="nav" id="site-nav" aria-label="Navegación principal">
+        <a href="#about">Sobre mí</a>
+        <a href="#expertise">Especialidades</a>
+        <a href="#experience">Experiencia</a>
+        <a href="#education">Formación</a>
+        <a class="nav-contact" href="#contact">Contacto</a>
+        <div class="lang-switch" role="group" aria-label="Elegir idioma">
+          <a href="https://avazzano.github.io/profile/" lang="en" hreflang="en" title="English">EN</a>
+          <a href="https://avazzano.github.io/profile/es/" lang="es" hreflang="es" aria-current="page" title="Español">ES</a>
+          <a href="https://avazzano.github.io/profile/it/" lang="it" hreflang="it" title="Italiano">IT</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Engineering Manager hands-on · Arquitecto de software</span>
+          <h1 id="hero-heading">“No se puede usar un <em>mapa antiguo</em> para explorar un mundo nuevo.”</h1>
+          <p class="hero-lead"><strong>Acompaño a equipos de ingeniería en sus procesos de transformación digital.</strong> Combino liderazgo técnico y experiencia práctica para alinear personas, arquitectura de software e infraestructura cloud, y convertir desafíos complejos en soluciones confiables y escalables.</p>
+          <p class="hero-meta"><span class="dot" aria-hidden="true"></span>Con base en La Plata, Argentina <span aria-hidden="true">·</span> Experiencia en toda Latinoamérica</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#experience">Conocé mi trayectoria <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-outline" href="https://www.linkedin.com/in/andres-vazzano/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="container" aria-label="Resumen profesional">
+      <div class="stat-strip">
+        <div class="stat"><b>15+</b><span>Años en ingeniería<br>de software</span></div>
+        <div class="stat"><b>LATAM</b><span>Colaboración interdisciplinaria<br>y entregas regionales</span></div>
+        <div class="stat"><b>De punta a punta</b><span>De la estrategia técnica<br>a los sistemas productivos</span></div>
+      </div>
+    </div>
+
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">01 / Perfil</span>
+          <h2 id="about-heading">Liderazgo con profundidad técnica.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>Soy un <strong>líder técnico hands-on y arquitecto de software</strong> con más de 15 años de experiencia diseñando, desarrollando y evolucionando sistemas críticos para el negocio en seguros, comercio electrónico y salud.</p>
+            <p>Mi trayectoria abarca desde el desarrollo de servicios backend y la integración de plataformas legacy hasta el liderazgo de equipos, el diseño de arquitecturas y la entrega de sistemas cloud-native en Latinoamérica.</p>
+            <p>Creo que una buena gestión de ingeniería requiere criterio técnico, prioridades claras y capacidad de trabajar junto a los equipos. Disfruto desarrollar talento, tomar decisiones de arquitectura, resolver problemas complejos y mantenerme cerca del código, la infraestructura y la operación.</p>
+          </div>
+          <div class="principles" aria-label="Mi forma de trabajo">
+            <div class="principle"><span class="principle-number">01</span><div><h3>Liderar con contexto</h3><p>Traducir objetivos de negocio en una dirección técnica clara, responsabilidades y prioridades de entrega.</p></div></div>
+            <div class="principle"><span class="principle-number">02</span><div><h3>Mantenerse hands-on</h3><p>Participar en revisiones de arquitectura, resolución de problemas técnicos, desarrollo y prácticas de entrega.</p></div></div>
+            <div class="principle"><span class="principle-number">03</span><div><h3>Diseñar para producción</h3><p>Ir más allá de la implementación: resiliencia, observabilidad, seguridad y operaciones sostenibles son fundamentales.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="expertise" aria-labelledby="expertise-heading">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">02 / Mis fortalezas</span>
+          <h2 id="expertise-heading">Liderazgo, arquitectura y profundidad técnica.</h2>
+          <p>Me especializo en la intersección entre la gestión de ingeniería, la entrega de software y la infraestructura que sostiene sistemas complejos.</p>
+        </div>
+        <div class="expertise-grid">
+          <article class="expertise-card">
+            <div class="card-symbol" aria-hidden="true">01</div>
+            <h3>Liderazgo de ingeniería</h3>
+            <p>Estrategia técnica, coordinación de entregas, mentoring y colaboración entre áreas. Acompaño a los equipos sin perder participación en las decisiones de ingeniería más importantes.</p>
+            <div class="tags"><span class="tag">Liderazgo técnico</span><span class="tag">Mentoría</span><span class="tag">Entrega</span><span class="tag">Revisiones de arquitectura</span></div>
+          </article>
+          <article class="expertise-card">
+            <div class="card-symbol" aria-hidden="true">02</div>
+            <h3>Arquitectura de software</h3>
+            <p>Diseño de integraciones, APIs, microservicios resilientes y sistemas distribuidos. Modernización de plataformas legacy sin comprometer la confiabilidad ni la continuidad del negocio.</p>
+            <div class="tags"><span class="tag">Microservicios</span><span class="tag">Gestión de APIs</span><span class="tag">Integración de sistemas</span><span class="tag">Kafka</span><span class="tag">REST / OAuth2</span></div>
+          </article>
+          <article class="expertise-card">
+            <div class="card-symbol" aria-hidden="true">03</div>
+            <h3>Cloud e infraestructura</h3>
+            <p>Diseño, despliegue y operación de cargas cloud-native, con foco en automatización, infraestructura escalable, alta disponibilidad y entregas confiables.</p>
+            <div class="tags"><span class="tag">Azure / AKS</span><span class="tag">AWS</span><span class="tag">Kubernetes</span><span class="tag">Docker</span><span class="tag">Istio</span><span class="tag">Terraform</span><span class="tag">CI/CD</span></div>
+          </article>
+          <article class="expertise-card">
+            <div class="card-symbol" aria-hidden="true">04</div>
+            <h3>Desarrollo hands-on</h3>
+            <p>Sólida base en ingeniería de software, especialmente en servicios backend, integraciones, procesamiento de datos y herramientas para entregar software listo para producción.</p>
+            <div class="tags"><span class="tag">Java / Spring Boot</span><span class="tag">Go</span><span class="tag">Node.js</span><span class="tag">.NET</span><span class="tag">Kotlin</span><span class="tag">PostgreSQL</span><span class="tag">Jenkins</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="experience" aria-labelledby="experience-heading" style="padding-top:24px">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">03 / Trayectoria</span>
+          <h2 id="experience-heading">Experiencia y principales contribuciones.</h2>
+          <p>Una evolución desde el desarrollo de software hacia la arquitectura y el liderazgo técnico, siempre conectada con la ejecución y la ingeniería.</p>
+        </div>
+        <div class="timeline">
+          <article class="job">
+            <div class="job-card">
+              <div class="job-head">
+                <div><p class="job-company">MetLife Argentina</p><h3>Líder sénior de integraciones</h3></div>
+                <span class="job-date">Mar 2025 – Actualidad</span>
+              </div>
+              <p class="job-summary">Liderazgo técnico, arquitectura y entrega de plataformas de integración críticas para el negocio en Latinoamérica.</p>
+              <ul>
+                <li>Lidero la arquitectura y entrega de integraciones B2B, equilibrando prioridades de negocio, seguridad, escalabilidad y confiabilidad.</li>
+                <li>Impulso prácticas de integración cloud-native, gobierno de APIs y decisiones técnicas junto a equipos de ingeniería multidisciplinarios.</li>
+                <li>Conecto la ejecución técnica con los referentes regionales, desde el diseño de soluciones y los planes tecnológicos hasta su puesta en producción.</li>
+              </ul>
+              <div class="tags"><span class="tag">Gestión técnica</span><span class="tag">Arquitectura de integración</span><span class="tag">Plataformas de APIs</span><span class="tag">Entregas cloud-native</span></div>
+            </div>
+          </article>
+
+          <article class="job">
+            <div class="job-card">
+              <div class="job-head">
+                <div><p class="job-company">Frávega Tech</p><h3>Líder técnico · Plataforma de búsqueda</h3></div>
+                <span class="job-date">Jul 2021 – Feb 2025</span>
+              </div>
+              <div class="roles">
+                <div><strong>Líder técnico</strong><span>Ene 2022 – Feb 2025</span></div>
+                <div><strong>Ingeniero de software sénior</strong><span>Jul 2021 – Dic 2021</span></div>
+              </div>
+              <p class="job-summary">Lideré la evolución técnica de sistemas críticos de búsqueda e indexación para e-commerce, con altos volúmenes de tráfico.</p>
+              <ul>
+                <li>Lideré la migración del motor de búsqueda de una arquitectura monolítica a microservicios, mejorando la escalabilidad y los tiempos de respuesta.</li>
+                <li>Rediseñé la arquitectura de indexación de productos para procesar grandes volúmenes de datos en tiempo real.</li>
+                <li>Diseñé sistemas distribuidos de alta disponibilidad y baja latencia, y acompañé prácticas de ingeniería, mentoría y entrega.</li>
+                <li>Lideré la entrega de un backoffice interno para operaciones de e-commerce y gobierno de contenidos.</li>
+              </ul>
+              <div class="tags"><span class="tag">Liderazgo técnico</span><span class="tag">Java</span><span class="tag">Microservicios</span><span class="tag">Sistemas distribuidos</span><span class="tag">Rendimiento</span></div>
+            </div>
+          </article>
+
+          <article class="job">
+            <div class="job-card">
+              <div class="job-head">
+                <div><p class="job-company">SOOFT Technology</p><h3>Desarrollador Full Stack sénior</h3></div>
+                <span class="job-date">Ago 2020 – Jun 2021</span>
+              </div>
+              <p class="job-summary">Participé en DigiDoc, plataforma de salud para historias clínicas y recetas electrónicas.</p>
+              <ul>
+                <li>Desarrollé funcionalidades de historias clínicas y tratamientos con Groovy/Grails, JavaScript y PostgreSQL.</li>
+                <li>Automaticé pipelines CI/CD con Jenkins y trabajé en prácticas de despliegue y seguridad en AWS.</li>
+              </ul>
+              <div class="tags"><span class="tag">Groovy / Grails</span><span class="tag">PostgreSQL</span><span class="tag">Jenkins</span><span class="tag">AWS</span></div>
+            </div>
+          </article>
+
+          <article class="job">
+            <div class="job-card">
+              <div class="job-head">
+                <div><p class="job-company">Seguros Rivadavia</p><h3>Arquitecto de integraciones · Ingeniero de software</h3></div>
+                <span class="job-date">Jun 2015 – Jun 2021</span>
+              </div>
+              <div class="roles">
+                <div><strong>Arquitecto de integraciones</strong><span>Abr 2020 – Jun 2021</span></div>
+                <div><strong>Desarrollador Full Stack sénior</strong><span>Abr 2017 – Mar 2020</span></div>
+                <div><strong>Desarrollador Full Stack semisénior</strong><span>Jun 2015 – Mar 2017</span></div>
+              </div>
+              <p class="job-summary">Evolucioné desde el desarrollo full stack hasta la arquitectura de integraciones y el liderazgo técnico.</p>
+              <ul>
+                <li>Desarrollé y mantuve aplicaciones web, móviles y backend, además de integraciones con terceros y servicios entre plataformas modernas y sistemas legacy.</li>
+                <li>Brindé orientación técnica a equipos de desarrollo y análisis, proponiendo mejoras de arquitectura, calidad y productividad.</li>
+              </ul>
+              <div class="tags"><span class="tag">Java / Spring Boot</span><span class="tag">Integración empresarial</span><span class="tag">Web y móvil</span><span class="tag">Modernización legacy</span></div>
+            </div>
+          </article>
+        </div>
+
+        <details class="early">
+          <summary>Experiencia anterior (2010–2016) — ver puestos</summary>
+          <div class="early-content">
+            <div class="early-item"><h4>CeSPI · Instructor de Java</h4><span>Ago 2014 – Feb 2016</span><p>Dicté cursos de programación Java para niveles inicial e intermedio.</p></div>
+            <div class="early-item"><h4>Ministerio de Infraestructura · Consultor de software</h4><span>Ene 2015 – Jul 2015</span><p>Desarrollé aplicaciones web para el sector público con Python, Django y PostgreSQL.</p></div>
+            <div class="early-item"><h4>SENASA · Desarrollador Full Stack</h4><span>Oct 2012 – Dic 2014</span><p>Desarrollé aplicaciones empresariales con Java, JSF, JPA y Oracle.</p></div>
+            <div class="early-item"><h4>LIFIA · Desarrollador Java</h4><span>May 2010 – Sep 2012</span><p>Diseñé y desarrollé módulos para sistemas financieros del gobierno nacional con Java, Spring, Hibernate y Oracle.</p></div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="section" id="education" aria-labelledby="education-heading">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">04 / Formación y docencia</span>
+          <h2 id="education-heading">Formación sólida. Aprendizaje continuo.</h2>
+          <p>Formación universitaria en informática, actualización técnica permanente y más de una década formando nuevas generaciones de profesionales del software.</p>
+        </div>
+        <div class="learning-grid">
+          <div class="learning-card">
+            <h3>Educación y capacitación</h3>
+            <div class="learning-item"><strong>Licenciatura en Sistemas</strong><span>Universidad Nacional de La Plata · 2002–2009</span></div>
+            <div class="learning-item"><strong>Analista Programador Universitario</strong><span>Universidad Nacional de La Plata · 2002–2005</span></div>
+            <div class="learning-item"><strong>Certificación profesional en Arquitectura Cloud</strong><span>ITBA · 2025</span></div>
+            <div class="learning-item"><strong>Programa de Liderazgo Organizacional</strong><span>ITBA · 2026</span></div>
+            <div class="learning-item"><strong>Desarrollo de aplicaciones con IA</strong><span>UTN FRBA · 2024</span></div>
+          </div>
+          <div class="learning-card">
+            <h3>Docencia y mentoría</h3>
+            <p class="learning-intro">La docencia es parte de mi trayectoria desde hace años. Fortalece mi capacidad de explicar conceptos complejos, desarrollar personas y transmitir fundamentos de ingeniería de software.</p>
+            <div class="learning-item"><strong>Ayudante docente · Facultad de Informática, UNLP</strong><span>Jul 2012 – Actualidad</span></div>
+            <div class="learning-item"><strong>Java y Aplicaciones Avanzadas sobre Internet</strong><span>Asignaturas universitarias · Ingeniería de software</span></div>
+            <div class="learning-item"><strong>Laboratorio de Software</strong><span>Asignatura universitaria · Desarrollo práctico</span></div>
+            <div class="learning-item"><strong>Instructor Java · CeSPI</strong><span>Ago 2014 – Feb 2016</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt contact-section" id="contact" aria-labelledby="contact-heading">
+      <div class="container contact-grid">
+        <div>
+          <span class="eyebrow">05 / Contacto</span>
+          <h2 id="contact-heading">Conversemos sobre ingeniería.</h2>
+          <p>¿Te interesan el liderazgo de ingeniería, las plataformas cloud, la arquitectura de software o resolver desafíos técnicos complejos? Siempre estoy dispuesto a intercambiar ideas.</p>
+        </div>
+        <div class="contact-links">
+          <a class="btn btn-primary" href="mailto:andres.vazzano@gmail.com">Escribime <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-outline" href="https://www.linkedin.com/in/andres-vazzano/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-outline" href="https://github.com/avazzano" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year">2026</span> Andrés Vazzano · La Plata, Argentina</span>
+      <span>Desarrollado con atención al detalle, curiosidad técnica y mentalidad hands-on.</span>
+    </div>
+  </footer>
+  <script>
+    (function(){
+      var menuButton=document.getElementById('menu-button');
+      var nav=document.getElementById('site-nav');
+      menuButton.addEventListener('click',function(){
+        var expanded=menuButton.getAttribute('aria-expanded')==='true';
+        menuButton.setAttribute('aria-expanded',String(!expanded));
+        nav.classList.toggle('open',!expanded);
+      });
+      nav.querySelectorAll('a').forEach(function(link){link.addEventListener('click',function(){
+        nav.classList.remove('open');menuButton.setAttribute('aria-expanded','false');
+      })});
+      document.getElementById('year').textContent=new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>

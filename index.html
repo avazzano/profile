@@ -46,11 +46,12 @@
     .menu-button{display:none;background:transparent;border:1px solid var(--line);color:var(--ink);border-radius:11px;padding:8px 13px;cursor:pointer;font-weight:700}
     .eyebrow{display:inline-flex;align-items:center;gap:11px;color:var(--accent);font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
     .eyebrow::before{content:"";width:23px;height:1px;background:var(--accent)}
-    .hero{position:relative;padding:121px 0 100px;overflow:hidden}
-    .hero-grid{display:grid;grid-template-columns:minmax(0,1.28fr) minmax(320px,.85fr);align-items:center;gap:76px}
-    .hero h1{font-family:"Space Grotesk",sans-serif;font-size:clamp(48px,6.15vw,84px);line-height:1.07;letter-spacing:-.066em;font-weight:600;margin:24px 0 26px;max-width:780px}
+    .hero{position:relative;padding:132px 0 110px;overflow:hidden}
+    .hero-grid{display:block;max-width:1040px;margin-left:auto;margin-right:auto}
+    .hero h1{font-family:"Space Grotesk",sans-serif;font-size:clamp(45px,5.8vw,76px);line-height:1.14;letter-spacing:-.058em;font-weight:600;margin:30px 0 28px;max-width:1050px}
     .hero h1 em{font-style:normal;color:var(--accent)}
-    .hero-lead{font-size:clamp(17px,1.65vw,20px);color:#cad5df;line-height:1.75;max-width:690px;margin:0 0 32px}
+    .hero-lead strong{color:var(--ink);font-weight:700}
+    .hero-lead{font-size:clamp(17px,1.6vw,20px);color:#cad5df;line-height:1.8;max-width:800px;margin:0 0 32px}
     .hero-meta{display:flex;align-items:center;gap:9px;color:var(--muted);font-size:13px;margin:0 0 35px}
     .hero-meta .dot{background:var(--accent);border-radius:50%;height:7px;width:7px;box-shadow:0 0 0 5px rgba(115,228,197,.12)}
     .actions{display:flex;flex-wrap:wrap;gap:13px}
@@ -60,17 +61,6 @@
     .btn-primary:hover{background:var(--accent-bright)}
     .btn-outline{border:1px solid rgba(210,230,241,.3);color:var(--ink)}
     .btn-outline:hover{border-color:var(--accent)}
-    .engineering-panel{position:relative;border:1px solid rgba(115,228,197,.22);border-radius:24px;padding:28px;background:linear-gradient(152deg,rgba(30,58,73,.93),rgba(15,31,49,.98));box-shadow:0 30px 75px rgba(0,0,0,.2)}
-    .engineering-panel::after{content:"";position:absolute;inset:11px -12px -12px 11px;border:1px solid rgba(115,228,197,.09);border-radius:24px;z-index:-1}
-    .panel-head{display:flex;justify-content:space-between;align-items:center;gap:12px;color:var(--muted);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.16em;padding-bottom:23px;border-bottom:1px solid var(--line)}
-    .panel-head span:last-child{color:var(--accent);letter-spacing:.09em}
-    .panel-title{font:600 26px/1.25 "Space Grotesk",sans-serif;letter-spacing:-.04em;margin:24px 0 21px}
-    .system-row{display:grid;grid-template-columns:50px 1fr;align-items:center;gap:14px;margin-top:10px;padding:16px 14px;border-radius:13px;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.065)}
-    .system-index{display:grid;place-items:center;border:1px solid rgba(115,228,197,.3);color:var(--accent);border-radius:10px;height:43px;font:700 12px "Space Grotesk",sans-serif}
-    .system-row strong{display:block;font:700 13px "Space Grotesk",sans-serif;letter-spacing:.035em}
-    .system-row small{display:block;color:var(--muted);font-size:12px;line-height:1.5;margin-top:4px}
-    .panel-foot{display:flex;align-items:center;gap:11px;margin-top:24px;color:#b9cece;font-size:12px}
-    .panel-foot::before{content:"";width:8px;height:8px;background:var(--accent);border-radius:50%}
     .stat-strip{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
     .stat{padding:30px 24px;display:flex;gap:16px;align-items:center}
     .stat:first-child{padding-left:0}
@@ -140,8 +130,7 @@
     .footer a:hover{color:var(--accent)}
     @media (max-width:950px){
       .hero{padding:90px 0 78px}
-      .hero-grid{grid-template-columns:1fr;gap:45px}
-      .engineering-panel{max-width:620px}
+      .hero-grid{display:block}
       .about-grid{gap:35px}
       .nav{gap:17px}
       .nav a{font-size:12px}
@@ -157,9 +146,8 @@
       .nav a{font-size:14px;padding:3px 0}
       .nav .nav-contact{text-align:center;padding:9px}
       .hero{padding:77px 0 65px}
-      .hero h1{font-size:clamp(43px,11vw,64px)}
+      .hero h1{font-size:clamp(39px,10vw,61px)}
       .hero-lead{font-size:16px}
-      .engineering-panel{padding:22px}
       .stat-strip{grid-template-columns:1fr}
       .stat{padding:19px 0!important}
       .stat:not(:last-child){border-right:0;border-bottom:1px solid var(--line)}
@@ -216,22 +204,15 @@
       <div class="container hero-grid">
         <div>
           <span class="eyebrow">Hands-on Engineering Manager · Software Architect</span>
-          <h1 id="hero-heading">I lead teams.<br>I <em>build systems.</em></h1>
-          <p class="hero-lead">Engineering leadership with an engineer's mindset. I connect people, software architecture and cloud infrastructure to deliver reliable, scalable products and platforms.</p>
+          <h1 id="hero-heading">“You can't use an <em>old map</em> to explore a new world.”</h1>
+          <p class="hero-lead"><strong>I partner with engineering teams on their digital transformation journeys.</strong> I bring technical leadership and hands-on experience to align people, software architecture and cloud infrastructure—turning complex change into reliable, scalable solutions.</p>
           <p class="hero-meta"><span class="dot" aria-hidden="true"></span>Based in La Plata, Argentina <span aria-hidden="true">·</span> Experience across LATAM</p>
           <div class="actions">
             <a class="btn btn-primary" href="#experience">Explore my work <span aria-hidden="true">↗</span></a>
             <a class="btn btn-outline" href="https://www.linkedin.com/in/andres-vazzano/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
           </div>
         </div>
-        <aside class="engineering-panel" aria-label="My engineering approach">
-          <div class="panel-head"><span>Engineering in practice</span><span>People × Technology</span></div>
-          <h2 class="panel-title">From architecture<br>to production.</h2>
-          <div class="system-row"><span class="system-index">01</span><div><strong>DESIGN</strong><small>Software architecture · APIs · Distributed systems</small></div></div>
-          <div class="system-row"><span class="system-index">02</span><div><strong>BUILD</strong><small>Backend engineering · Code reviews · Delivery</small></div></div>
-          <div class="system-row"><span class="system-index">03</span><div><strong>OPERATE</strong><small>Cloud infrastructure · Kubernetes · Reliability</small></div></div>
-          <div class="panel-foot">Technical depth without losing the bigger picture.</div>
-        </aside>
+
       </div>
     </section>
 

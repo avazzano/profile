@@ -5,18 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b1322">
   <meta name="author" content="Andrés Vazzano">
-  <meta name="description" content="Andrés Vazzano is a hands-on engineering leader and software architect with 15+ years of experience in software development, cloud infrastructure, integration platforms and technical leadership.">
+  <meta name="description" content="Andrés Vazzano. Hands-on engineering leadership, software architecture, cloud infrastructure and digital transformation.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Andrés Vazzano | Hands-on Engineering Manager">
-  <meta property="og:description" content="Engineering leadership with an engineer's mindset. Software architecture, cloud infrastructure, API platforms and hands-on development.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="es_AR">
+  <meta property="og:locale:alternate" content="it_IT">
+  <meta property="og:title" content="Andrés Vazzano | Hands-on Engineering Manager &amp; Software Architect">
+  <meta property="og:description" content="Andrés Vazzano. Hands-on engineering leadership, software architecture, cloud infrastructure and digital transformation.">
   <meta property="og:url" content="https://avazzano.github.io/profile/">
   <meta name="color-scheme" content="dark">
   <link rel="canonical" href="https://avazzano.github.io/profile/">
+  <link rel="alternate" hreflang="en" href="https://avazzano.github.io/profile/">
+  <link rel="alternate" hreflang="es" href="https://avazzano.github.io/profile/es/">
+  <link rel="alternate" hreflang="it" href="https://avazzano.github.io/profile/it/">
+  <link rel="alternate" hreflang="x-default" href="https://avazzano.github.io/profile/">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230e2033'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' fill='%2367e8c6' font-family='Arial,sans-serif' font-weight='700' font-size='27'%3EAV%3C/text%3E%3C/svg%3E">
   <title>Andrés Vazzano | Hands-on Engineering Manager &amp; Software Architect</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   <style>
     :root{
       --bg:#0b1322;--bg-alt:#101c2d;--surface:#142235;--surface-2:#19293d;
@@ -168,6 +175,12 @@
       .contact-links{justify-content:start}
     }
     @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+  
+    .lang-switch{display:flex;align-items:center;gap:4px;padding:4px;border:1px solid var(--line);border-radius:999px;flex-shrink:0}
+    .lang-switch a{display:inline-flex;justify-content:center;align-items:center;min-width:34px;padding:4px 7px;border-radius:999px;font-size:11px;line-height:1.5;font-weight:700;letter-spacing:.05em;color:var(--muted);transition:background .2s,color .2s}
+    .lang-switch a:hover{color:var(--accent)}
+    .lang-switch a[aria-current="page"]{background:var(--accent);color:var(--bg)}
+    @media(max-width:680px){.lang-switch{justify-content:center;align-self:flex-start;margin-top:4px}}
   </style>
   <script type="application/ld+json">
   {
@@ -195,6 +208,11 @@
         <a href="#experience">Experience</a>
         <a href="#education">Education</a>
         <a class="nav-contact" href="#contact">Contact</a>
+        <div class="lang-switch" role="group" aria-label="Choose language">
+          <a href="https://avazzano.github.io/profile/" lang="en" hreflang="en" aria-current="page" title="English">EN</a>
+          <a href="https://avazzano.github.io/profile/es/" lang="es" hreflang="es" title="Español">ES</a>
+          <a href="https://avazzano.github.io/profile/it/" lang="it" hreflang="it" title="Italiano">IT</a>
+        </div>
       </nav>
     </div>
   </header>
